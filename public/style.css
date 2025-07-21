@@ -427,6 +427,7 @@ body {
 
 /* Footer Section */
 footer.footer {
+  width: 100%;
   background-color: var(--primary-color);
   color: white;
   padding: 25px 15px;
