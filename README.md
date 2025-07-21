@@ -1,8 +1,5 @@
-Sure! Here's your complete `README.md` file — all in one place, ready to copy and paste into your GitHub repository:
 
----
 
-```markdown
 # 🩺 Doscy — Medical Doctor Finder Website
 
 **Doscy** is a full-stack medical website that helps users find doctors, search by name or specialty, and submit contact information easily. Designed for simplicity and usability, it features a clean UI and responsive design.
@@ -128,12 +125,3 @@ Licensed under the [MIT License](LICENSE).
 
 ```
 
----
-
-Let me know if you also want:
-- A `.env.example` file
-- A working preview screenshot added
-- Badges (tech, license, etc.) on top of the README
-
-I can generate all of that too!
-```
