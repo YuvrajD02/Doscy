@@ -23,3 +23,26 @@ document.getElementById("searchForm").addEventListener("submit", function (e) {
 
   document.getElementById("notFound").style.display = found ? "none" : "block";
 });
+
+
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  console.log("Form submitted");
+  // const formData = new FormData(e.target);
+  // const data = Object.fromEntries(formData.entries());
+  // console.log("Form data:", data);
+  // try {
+  //   const response = await fetch("/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(data)
+  //   });
+
+  //   const result = await response.json();
+  //   console.log("Success:", result);
+  // } catch (error) {
+  //   console.error("Error:", error);
+  // }
+});

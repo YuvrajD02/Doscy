@@ -1,6 +1,11 @@
+require('dotenv').config();
 const express =require ('express');
 const app=express();
 const path=require('path');
+const connectDB = require('./database/mongoose');
+const Contact = require('./database/models/Contacts');
+
+connectDB();
 
 let port=3000;
 app.listen(port,function(){
@@ -41,9 +46,12 @@ app.get("/contact", (req, res) => {
 app.post("/contact", async (req, res) => {
   const { name, email, phone, message } = req.body;
   try {
+    console.log("Form submitted with data:", { name, email, phone, message });
     const newContact = new Contact({ name, email, phone, message });
     await newContact.save();
-    res.send("Thank you! Your message has been sent.");
+    console.log("Contact saved successfully");
+    // Redirect to the contact page or send a success response
+    res.redirect("/contact");
   } catch (error) {
     console.error("Error saving contact:", error);
     res.status(500).send("Something went wrong.");
