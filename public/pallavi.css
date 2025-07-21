@@ -182,3 +182,120 @@ body {
 .book-btn:hover {
   background-color: var(--btn-hover);
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .profile-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-left .doctor-img {
+    width: 200px;
+  }
+
+  .profile-right {
+    padding: 15px;
+  }
+
+  .booking .days {
+    gap: 8px;
+  }
+
+  .day {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .slots {
+    gap: 8px;
+  }
+
+  .slots button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .admin-btn,
+  .create-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .profile-container {
+    padding: 15px 10px;
+  }
+
+  .profile-left .doctor-img {
+    width: 180px;
+  }
+
+  .profile-right h2 {
+    font-size: 22px;
+  }
+
+  .qualification {
+    font-size: 14px;
+  }
+
+  .exp-tag {
+    display: block;
+    margin: 5px 0;
+    width: fit-content;
+  }
+
+  .about {
+    font-size: 14px;
+  }
+
+  .booking .days {
+    gap: 6px;
+  }
+
+  .day {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .slots {
+    gap: 6px;
+  }
+
+  .slots button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .book-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
