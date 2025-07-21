@@ -298,6 +298,99 @@ body {
   transition: background 0.3s;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .right {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home {
+    padding: 40px 20px;
+  }
+
+  .conwrite {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 100%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-container {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .service-cards {
+    padding: 0 15px;
+  }
+
+  #services.section {
+    padding: 60px 20px;
+  }
+
+  .contact-form {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .right {
+    gap: 12px;
+  }
+
+  .conwrite h2 {
+    font-size: 24px;
+  }
+
+  .conwrite p {
+    font-size: 14px;
+  }
+
+  .appo button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .doctor-section {
+    padding: 40px 15px;
+  }
+
+  .card,
+  .service-card {
+    width: 100%;
+  }
+}
+
 .contact-form button:hover {
   background-color: var(--secondary-color);
 }
@@ -358,15 +451,15 @@ footer.footer {
 
 
 a {
-  text-decoration: none; /* removes underline */
-  color: inherit;         /* uses parent element's text color */
+  text-decoration: none;
+  /* removes underline */
+  color: inherit;
+  /* uses parent element's text color */
 }
 
 a:hover {
-  text-decoration: none; /* still no underline on hover */
-  color: inherit;        /* prevents color change on hover */
+  text-decoration: none;
+  /* still no underline on hover */
+  color: inherit;
+  /* prevents color change on hover */
 }
-
-
-
-
