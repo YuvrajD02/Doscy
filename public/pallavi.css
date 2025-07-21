@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #0096c7;
+  --light-bg: #f4f9fc;
+  --card-bg: #ffffff;
+  --text-color: #003b47;
+  --muted-text: #6c757d;
+  --btn-hover: #005f8f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.admin-btn,
+.create-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-btn:hover,
+.create-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.profile-container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.profile-left .doctor-img {
+  width: 250px;
+  border-radius: 16px;
+  background: var(--secondary-color);
+  padding: 10px;
+}
+
+.profile-right {
+  flex: 1;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-right h2 {
+  color: var(--primary-color);
+  font-size: 26px;
+}
+
+.verified {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.qualification {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--muted-text);
+}
+
+.exp-tag {
+  background-color: var(--light-bg);
+  padding: 4px 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.about {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: var(--muted-text);
+}
+
+.fee {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.booking .days {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.day {
+  background: #eee;
+  border-radius: 50px;
+  padding: 10px 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  color: var(--text-color);
+}
+
+.day:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.day.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.slots button {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: var(--text-color);
+}
+
+.slots button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.book-btn {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: var(--btn-hover);
+}
